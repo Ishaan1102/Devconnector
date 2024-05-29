@@ -1,18 +1,71 @@
-# DevConnector 2.0
 
-**Social network for developers**
+# Devconnector
 
-This project is a MERN stack application developed as part of the "MERN Stack Front To Back" course on Udemy. It serves as a small social network app tailored for developers, featuring authentication, user profiles, and forum posts.
+Devconnector is a social media platform for developers to connect, share their work, and collaborate on projects. This project leverages the MERN stack (MongoDB, Express.js, React, Node.js) and includes features such as authentication, profile management, and a post feed.
 
-The application has undergone updates and improvements since the course was published. These changes include:
+## Features
 
-- Updated GitHub API authentication method due to deprecation of authentication via URL query parameters.
-- Replacement of the deprecated `request` package with `axios` for making HTTP requests.
-- Addition of the `normalize-url` package to handle user-entered URLs and ensure they are valid.
-- Fixing broken links in Gravatar by using `normalize-url`.
-- Implementation of Redux subscription to manage local storage for the authentication token.
-- Refactoring of components for improved reusability, such as merging `EditProfile` and `CreateProfile` into a single `ProfileForm` component.
-- Handling token expiration by logging the user out and ending their session.
-- Migration from Moment.js to the browser's built-in `Intl` API for date formatting.
+- **User Authentication:** Secure login and registration using JWT (JSON Web Tokens).
+- **Profile Management:** Create and update personal developer profiles with skills, experience, and education.
+- **Posts and Comments:** Create, edit, and delete posts, as well as comment on others' posts.
+- **Responsive Design:** Fully responsive UI built with React and Bootstrap.
 
-The project is structured to follow best practices, with the backend built using Node.js, Express.js, and MongoDB for the database. The frontend is built using React and Redux for state management. The application provides a comprehensive example of building a full-stack web application using modern technologies and practices.
+## Technologies Used
+
+- **MongoDB:** For database storage.
+- **Express.js:** For handling server-side logic and API endpoints.
+- **React:** For building the user interface.
+- **Node.js:** For server-side scripting.
+- **JWT:** For authentication and authorization.
+- **Redux:** For state management in React.
+- **Bootstrap:** For responsive design and styling.
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Ishaan1102/Devconnector.git
+   ```
+
+2. Navigate to the project directory:
+   ```sh
+   cd Devconnector
+   ```
+
+3. Install server dependencies:
+   ```sh
+   npm install
+   ```
+
+4. Navigate to the client directory and install dependencies:
+   ```sh
+   cd client
+   npm install
+   ```
+
+## Configuration
+
+1. Create a `.env` file in the root directory and add the following variables:
+   ```env
+   MONGO_URI=<your_mongodb_connection_string>
+   JWT_SECRET=<your_jwt_secret>
+   ```
+
+## Running the Application
+
+1. Start the server:
+   ```sh
+   npm run dev
+   ```
+
+2. The application will be accessible at `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out.
+
